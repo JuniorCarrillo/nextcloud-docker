@@ -72,9 +72,9 @@ services:
       - MYSQL_DATABASE=${MYSQL_DATABASE}
       - MYSQL_USER=${MYSQL_USER}
       - MYSQL_HOST=${MYSQL_HOST}
-    #   - VIRTUAL_HOST
-    #   - LETSENCRYPT_HOST
-    #   - LETSENCRYPT_EMAIL
+      - VIRTUAL_HOST=${VIRTUAL_HOST}
+      - LETSENCRYPT_HOST=${LETSENCRYPT_HOST}
+      - LETSENCRYPT_EMAIL=${LETSENCRYPT_EMAIL}
     restart: unless-stopped
 volumes:
   nextcloud_data: {}
